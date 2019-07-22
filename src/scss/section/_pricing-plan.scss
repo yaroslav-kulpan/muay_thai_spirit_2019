@@ -1,0 +1,49 @@
+.pricing-plan {
+}
+
+.pricing-plan__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pricing-plan__menu {
+  flex: 0 0 30%;
+  background: #777777;
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu__button__links {
+  padding-left: 20px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+
+  &:hover {
+    color: #fedb72;
+  }
+}
+
+.menu__button__links.active {
+  background: #000000;
+  color: #fff;
+}
+
+.pricing-plan__container {
+  padding: 20px;
+  flex: 0 0 70%;
+  background: #000;
+}
+
+.pricing__plan__container__content {
+  display: none;
+}
+
+.pricing__plan__container__content.active {
+  display: block;
+}
+
+.text-grey {
+  color: #ffffff;
+}

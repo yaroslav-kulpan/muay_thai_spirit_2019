@@ -1,0 +1,31 @@
+.titles {
+  margin: 0 auto;
+  position: relative;
+  color: #343a40;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: table;
+}
+
+.titles::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -25px;
+  width: 30px;
+  height: 20px;
+  border-top: 2px solid #fed57b;
+  border-left: 2px solid #fed57b;
+}
+
+.titles::after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  right: -25px;
+  width: 30px;
+  height: 20px;
+  border-bottom: 2px solid #fed57b;
+  border-right: 2px solid #fed57b;
+}

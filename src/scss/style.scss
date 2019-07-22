@@ -1,0 +1,17 @@
+body {
+  font-family: Monserat, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+@import "common/navbar";
+@import "common/header";
+@import "components/section-title";
+@import "section/for_whom";
+@import "section/about-muay-thai-spirit";
+@import "section/pricing-plan";
+@import "section/faq";
+@import "section/what-they-say-about-us";
+@import "section/muay-spirit-shop";
+@import "section/footer-form";
+@import "common/footer";

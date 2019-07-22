@@ -1,0 +1,56 @@
+@import "../components/carousel";
+/* what about says */
+
+.feedback {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url("../image/master-slide-08.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+
+.feedback-title {
+  color: #ffffff;
+}
+
+.feedback-subtitle {
+  color: #bbbbbb;
+}
+
+.feedback-description {
+  color: #bbbbbb;
+}
+
+.btn-facebook {
+  padding: 10px 15px;
+  background: #3b5998;
+  border-radius: 44px;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+
+.btn-facebook:hover {
+  color: #e2e6ea;
+  background: #365398;
+}
+
+.avatar-caption {
+}
+
+.avatar-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.avatar-subtitle {
+  font-size: 14px;
+  font-weight: 300;
+  color: #bbbbbb;
+}
+
+.avatar-img-mini {
+  width: 100px;
+  height: 100px;
+  box-shadow: 0 0 0 8px rgba(0, 203, 246, 0.23);
+
+}

@@ -1,0 +1,52 @@
+.header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  url("../image/master-slide-08.jpg") no-repeat fixed center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .7s;
+}
+
+.header-description {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #ddd;
+}
+
+.logotype-img {
+  width: 70px;
+  height: 70px;
+}
+
+.header-title {
+  padding: 8px;
+  border: 1px solid #fedb72;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.header-title-h1 {
+  font-weight: 900;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+
+.btn-signUp {
+  padding: 15px 40px;
+  font-weight: 700;
+  background: #d29d41;
+  color: #6c411b;
+  border-radius: 44px;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.btn-signUp:hover {
+  background: #fef347;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, .7);
+  transform: translate(0, -10px);
+}
