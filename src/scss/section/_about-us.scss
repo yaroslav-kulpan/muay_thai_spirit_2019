@@ -1,0 +1,46 @@
+.about-gym {
+  background: #000;
+}
+
+.card--elipse {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  max-width: 277px;
+  height: 277px;
+  background-color: rgba(254, 219, 114, 0.6);
+  border-radius: 50%;
+}
+
+.card__description--wrapper {
+  position: relative;
+  bottom: 8px;
+  height: 120px;
+  align-self: flex-end;
+}
+
+.card__counter {
+  position: relative;
+  bottom: 11px;
+  align-self: flex-start;
+  font-family: Impact, sans-serif;
+  font-size: 255px;
+  color: #ffffff;
+
+  &--coach {
+    position: relative;
+    top: -8px;
+    left: -10px;
+  }
+}
+
+.card__description {
+  font-family: FranklinGothic, sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+
+  &--coach {
+    position: relative;
+    bottom: 7px;
+  }
+}
