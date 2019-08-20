@@ -19,7 +19,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   color: #ffffff;
-
+  cursor: pointer;
   &:hover {
     color: #fedb72;
   }
@@ -38,6 +38,7 @@
 
 .pricing__plan__container__content {
   display: none;
+  color: #ffffff;
 }
 
 .pricing__plan__container__content.active {

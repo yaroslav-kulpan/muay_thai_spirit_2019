@@ -20,8 +20,8 @@ const fontsFiles = [										//составляем массив перемен
 ];
 
 const imgFiles = [
-    './src/image/**/**.jpg',
-    './src/image/**/**.png'
+    './src/image/**/**.*',
+    './src/image/**/**.*'
 ];
 const jsScript = [
     './src/js/jquery-3.4.1.min.js',
