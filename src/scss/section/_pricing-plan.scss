@@ -10,17 +10,28 @@
   flex: 0 0 30%;
   margin: 0;
   padding: 0;
-  background: #777777;
+  background-color: #2b2b2b;
+  border-right: 1px solid #e0e0e0;
   list-style-type: none;
 }
 
-.menu__button__links {
-  padding-left: 20px;
-  margin-bottom: 10px;
-  font-size: 1.5rem;
+.pricing-plan__title {
+  padding-left: 17px;
   font-weight: 700;
   color: #ffffff;
+  text-transform: uppercase;
+}
+
+.menu__button__links {
+  padding-left: 17px;
+  color: #595959;
+  font-size: 14px;
+  font-weight: 400;
   cursor: pointer;
+  text-align: left;
+  line-height: 40px;
+  margin-bottom: 1px;
+  transition: all 0.2s linear;
 
   &:hover {
     color: #fedb72;
@@ -28,8 +39,8 @@
 }
 
 .menu__button__links.active {
-  background: #000000;
-  color: #fff;
+  background: #d29d41;
+  color: #6c411b;
 }
 
 .pricing-plan__container {
