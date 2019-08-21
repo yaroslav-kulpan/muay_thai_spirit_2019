@@ -3,27 +3,43 @@
 
 /* Carousel base class */
 .carousel {
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-    padding-top: 2rem;
-    bottom: 3rem;
-    z-index: 10;
+  z-index: 10;
 }
 
-/* Declare heights because of positioning of img element */
 .carousel-item {
-    padding-top: 16rem;
-    padding-bottom: 16rem;
+  height: 26rem;
+}
+
+@media only screen and (max-width: 1042px) {
+  .carousel-item {
+    height: 32rem;
+  }
+}
+
+.carousel-indicators {
+  bottom: -75px;
+}
+
+.carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  background-color: #d29d41;
 }
 
 .carousel-item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    padding-top: 16rem;
-    padding-bottom: 16rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  padding-top: 16rem;
+  padding-bottom: 16rem;
 }
