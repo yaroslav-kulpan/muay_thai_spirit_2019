@@ -41,12 +41,11 @@
   background: #d29d41;
   color: #6c411b;
   border-radius: 44px;
-  transition: 1s;
+  transition: .3s;
   cursor: pointer;
 }
 
 .btn-signUp:hover {
   background: #fef347;
   box-shadow: 0 1px 10px rgba(0, 0, 0, .7);
-  transform: translate(0, -10px);
 }

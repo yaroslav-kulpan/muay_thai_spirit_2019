@@ -83,7 +83,7 @@ input[type=checkbox]:checked + label::before {
 }
 
 .btn-gold {
-  width: 220px;
+  max-width: 220px;
   background-color: #d29d41;
   border: 2px solid #d29d41;
   font-size: 1.2rem;

@@ -1,13 +1,15 @@
 .pricing-plan {
+  overflow-x: hidden;
 }
 
 .pricing-plan__row {
   display: flex;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
 }
 
 .pricing-plan__menu {
   flex: 0 0 30%;
+  max-width: 30%;
   margin: 0;
   padding: 0;
   background-color: #2b2b2b;
@@ -46,6 +48,7 @@
 .pricing-plan__container {
   padding: 20px;
   flex: 0 0 70%;
+  max-width: 70%;
   background: #000;
 }
 
