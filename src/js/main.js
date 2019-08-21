@@ -12,17 +12,20 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $('.pricing-plan__menu li').on('click', function () {
-        $(this).addClass('active').siblings().removeClass('active')
+        $(this).addClass('active').slideDown(500).siblings().removeClass('active')
             .closest('div.pricing-plan__row')
             .find('div.pricing__plan__container__content').removeClass('active')
-            .eq($(this).index()).addClass('active').slideDown();
+            .eq($(this).index()).addClass('active').slideDown(500);
     })
 });
-
+$('.btn-signUp').on('click', function () {
+    alert('Sorry, is not a modal?')
+});
 $('.responsive').slick({
     dots: true,
     infinite: true,
     speed: 300,
+    autoPlay: true,
     slidesToShow: 4,
     slidesToScroll: 4,
     responsive: [
