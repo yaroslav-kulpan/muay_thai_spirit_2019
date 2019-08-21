@@ -16,11 +16,20 @@
 }
 
 @media only screen and (max-width: 1042px) {
+  .feedback {
+    padding-top: 3rem;
+  }
   .carousel-item {
-    height: 32rem;
+    height: 26rem;
   }
   .carousel-caption {
-    height: 32rem;
+    height: 26rem;
+  }
+
+  .feedback-description, .feedback-subtitle {
+    color: #bbb;
+    max-height: 150px;
+    overflow: hidden;
   }
 }
 
@@ -46,3 +55,4 @@
   padding-top: 16rem;
   padding-bottom: 16rem;
 }
+

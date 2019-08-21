@@ -5,15 +5,31 @@
 }
 
 .nav__link {
+  position: relative;
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 1rem;
   font-weight: 700;
   color: #f4f4f4;
   text-transform: uppercase;
-  transition: .7s;
+  transition: .4s;
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    height: 2px;
+    width: 0;
+    border-bottom: 2px solid #fedb72;
+    transition: .4s;
+  }
+
   &:hover {
     color: #fedb72;
+    &:after {
+      width: 100%;
+    }
   }
 }
 
