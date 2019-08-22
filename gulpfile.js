@@ -46,10 +46,10 @@ function image() {											//модуль переноса картинок
         .pipe(gulp.dest('./dist/image'))
 }
 
-function fonts() {											//Copy fonts to dir "dev"
-    return gulp.src(fontsFiles)
-        .pipe(gulp.dest('./dist/fonts'))
-}
+// function fonts() {											//Copy fonts to dir "dev"
+//     return gulp.src(fontsFiles)
+//         .pipe(gulp.dest('./dist/fonts'))
+// }
 
 function css() {
     return gulp.src(componentCss)
@@ -118,6 +118,6 @@ gulp.task('image', image);
 gulp.task('scripts', scripts);
 gulp.task('sass', forSass);
 gulp.task('watch', watch);
-gulp.task('fonts', fonts);
-gulp.task('build', gulp.series('cleandev', gulp.series(image, fonts, scripts, js, css, buildHtml, forSass)));
+// gulp.task('fonts', fonts);
+gulp.task('build', gulp.series('cleandev', gulp.series(image, scripts, js, css, buildHtml, forSass)));
 gulp.task('dev', gulp.series('build', watch));
