@@ -11,28 +11,23 @@ const terser = require('gulp-terser');						//minify for js
 const autoprefixer = require('gulp-autoprefixer');			//cross-browser compatibility css
 // const imagemin = require('gulp-imagemin');
 
-const fontsFiles = [										//составляем массив переменних с все файлов шрифтов, для переноса в папку разработки
-    './src/fonts/**.eot',
-    './src/fonts/**.ttf',
-    './src/fonts/**.woff',
-    './src/fonts/**.woff2',
-    './src/fonts/**.otf'
-];
+// const fontsFiles = [										//составляем массив переменних с все файлов шрифтов, для переноса в папку разработки
+//     './src/fonts/**.eot',
+//     './src/fonts/**.ttf',
+//     './src/fonts/**.woff',
+//     './src/fonts/**.woff2',
+//     './src/fonts/**.otf'
+// ];
 
 const imgFiles = [
     './src/image/**/**.*',
     './src/image/**/**.*'
 ];
 const jsScript = [
-    './src/js/jquery-3.4.1.min.js',
-    './src/js/bootstrap.min.js',
-    './src/js/slick.min.js'
+    './src/js/*.js'
 ];
 const componentCss = [
-    './src/scss/components/animate.css',
-    './src/scss/components/slick.css',
-    './src/scss/components/slick-theme.css',
-    './src/scss/components/bootstrap.min.css'
+    './src/scss/components/*.css',
 ];
 
 function cleandev() {										//модуль отчистки папки перед каждой расспаковкой

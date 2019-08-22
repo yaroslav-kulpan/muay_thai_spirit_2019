@@ -21,6 +21,20 @@
   font-size: 20px;
 }
 
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  position: absolute;
+  top: -57px;
+  right: 17px;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+  width: 20px;
+  background: #ddd;
+}
+.owl-theme .owl-dots {
+  margin-top: 10px;
+}
 .btn-instagram {
   padding: 12px 17px;
   background: #d29d41;
