@@ -1,61 +1,167 @@
-<section class="pricing-plan py-4">
-    <div class="container"><h3 class="titles mb-5">Расписание и цены на абонементы</h3></div>
-    <div class="pricing-plan__row">
-        <ul class="pricing-plan__menu py-4">
-            <li class="menu__button__links active">Детская группа</li>
-            <li class="menu__button__links">Взрослая группа (новички)</li>
-            <li class="menu__button__links">Взрослая группа</li>
-            <li class="menu__button__links">Спортсмены</li>
-            <li class="menu__button__links">Индвидуальные тренировки</li>
-        </ul>
-        <div class="pricing-plan__container">
-            <div class="pricing__plan__container__content active">
-                <h4>Детские тренировки</h4>
-                <p>проходят пн/ср/пт с 16:30 до 18:00</p>
-                <h4>Тренера: Евгений Краминский, Андрей Мезенцев, Влада Кухаренко</h4>
-                <strong>Стоимость:</strong> 450 грн/мес (12 занятий);
-                <p>Допустимый возраст: На тренировки можно приходить с 6 лет.</p>
-                <a href="#" class="btn btn-block btn-gold">записаться</a>
+<section class="pricing-plan py-4 overflow-hidden">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3">
+                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a class="nav-link nav__link__pricing active" id="v-pills-home-tab" data-toggle="pill"
+                       href="#v-pills-home" role="tab"
+                       aria-controls="v-pills-home" aria-selected="true">Детская группа</a>
+                    <a class="nav-link nav__link__pricing" id="v-pills-profile-tab" data-toggle="pill"
+                       href="#v-pills-profile" role="tab"
+                       aria-controls="v-pills-profile" aria-selected="false">Взрослая группа (новички)</a>
+                    <a class="nav-link nav__link__pricing" id="v-pills-messages-tab" data-toggle="pill"
+                       href="#v-pills-messages" role="tab"
+                       aria-controls="v-pills-messages" aria-selected="false">Взрослая группа</a>
+                    <a class="nav-link nav__link__pricing" id="v-pills-settings-tab" data-toggle="pill"
+                       href="#v-pills-settings" role="tab"
+                       aria-controls="v-pills-settings" aria-selected="false">Спортсмены</a>
+                    <a class="nav-link nav__link__pricing" id="v-pills-settings-tab-2" data-toggle="pill"
+                       href="#v-pills-settings-2"
+                       role="tab"
+                       aria-controls="v-pills-settings" aria-selected="false">Индивидуальные тренировки</a>
+                </div>
             </div>
-            <div class="pricing__plan__container__content">
-                <h4>Тренировки для взрослых</h4>
-                <p>( от 16 лет) без опыта или минимальным в боевых искусствах проходят вт/чт/
-                    на 20:00-21:30 и сб 19:30-21:00.</p>
-                <h4>Тренер: Антон Калитвинцев</h4>
-                <strong>Стоимость: 600 грн/мес (12 занятий)</strong>
-                <p>
-                    В данной группе вы сможете научиться основам Muay Thai, повысить физическую форму, отточить технику
-                    и приобрести опыт спаррингов. При желании можете посещать группу для взрослых пн/ср/пт с повышенной
-                    сложностью, даже без опыта, или взять индивидуальные занятия.
-                </p>
-                <a href="#" class="btn btn-block btn-gold">записаться</a>
-            </div>
-            <div class="pricing__plan__container__content">
-                <h4>Тренировки для взрослых</h4>
-                <p>( от 16 лет) с повышенным уровнем сложности проходят пн/вт/ср на 20:00-22:00.</p>
-                <h4>Тренер: Вячеслав Лозенко</h4>
-                <strong>Стоимость: 600 грн/мес (12 занятий)</strong>
-                <p>В данной группе вы сможете повысить физическую форму, отточить технику и приобрести опыт
-                    спаррингов.</p>
-            </div>
-            <div class="pricing__plan__container__content">
-                <h4>Тренировки в спортгруппе</h4>
-                <p>проходят ежедневно кроме воскресенья. Тренировки проходят пн-пт с 18:00 до 20:00.</p>
-                <p>В спортгруппу можно попасть исключительно по предварительному отбору.</p>
-                <h4>Тренер: Вячеслав Лозенко</h4>
-                <strong>Стоимость: 1200 грн/мес (12 занятий)</strong>
-                <p>Спортсмены клуба регулярно посещают кемпы в Таиланде, участвуют в профессиональных боях, посещают
-                    чемпионаты Европы и Мира.</p>
-                <a href="#" class="btn btn-block btn-gold">записаться</a>
-            </div>
-            <div class="pricing__plan__container__content">
-                <p>Вы можете посещать индивидуальные тренировки с любым тренером нашего клуба. Совместно с тренером вы
-                    прорабатываете удобный для вас график и темп занятий, вы сможете быстрее отточить технику и
-                    приобрести
-                    желаемую физическую форму.</p>
-                <p>Индивидуальные тренировки проводятся как для взрослых так и для детей.</p>
-                <p>Записаться на индивидуальные тренировки вы можете заполнив форму или позвонив по номеру.</p>
-                <a href="#" class="btn btn-block btn-gold">записаться</a>
+            <div class="col-9 d-flex flex-column justify-content-center">
+                <div class="tab-content" id="v-pills-tabContent">
+                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                         aria-labelledby="v-pills-home-tab">
+                        <h4 class="pricing-plan__abonement__title">Детские <span>тренировки</span></h4>
+                        <div class="d-flex align-items-center position-relative">
+                            <div class="abonement__time__wrapper mr-5">
+                                <h5 class="abonement__text--title">Когда?</h5>
+                                <div class="d-flex">
+                                    <div class="abonement__time__start">16<span
+                                            class="abonement__time__start--part-too">30</span></div>
+                                    <div class="abonement__time__end">18<span
+                                            class="abonement__time__end--part-too">00</span></div>
+                                </div>
+                                <p class="abonement__description">Понедельник, среда, пятница</p>
+                            </div>
+                            <div class="abonement__price__wrapper">
+                                <h5 class="abonement__text--title text-white">Сколько?</h5>
+                                <div class="abonement__price text-white">400
+                                    <span class="abonement__price--part-too">грн/мес</span>
+                                </div>
+                                <strong class="abonement__traning-quantity text-white">12 занятий</strong>
+                            </div>
+                        </div>
+                        <h5 class="abonement__text--title mt-3">Тренера:</h5>
+                        <div class="d-flex">
+                            <div class="avatar__wrapper text-center">
+                                <img src="dist/image/team/kraminskiy.jpg"
+                                     class="z-depth-1 avatar__image--mini rounded-circle" alt="Евгений Краминский">
+                                <h4 class="coach__name">Евгений Краминский</h4>
+                            </div>
+                            <div class="avatar__wrapper text-center">
+                                <img src="dist/image/team/mezentsev.png"
+                                     class="z-depth-1 avatar__image--mini rounded-circle" alt="Андрей Мезенцев">
+                                <h4 class="coach__name">Андрей Мезенцев</h4>
+                            </div>
+                            <div class="avatar__wrapper text-center">
+                                <img src="dist/image/team/vlada.jpg"
+                                     class="z-depth-1 avatar__image--mini rounded-circle" alt="Влада Кухаренко">
+                                <h4 class="coach__name">Влада Кухаренко</h4>
+                            </div>
+                        </div>
+                        <p class="acceptet__year">Допустимый возраст: на тренировки можно приходить с 6 лет.</p>
+                        <a href="#" class="btn btn-block btn-gold">записаться</a>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                         aria-labelledby="v-pills-profile-tab">
+                        <h4 class="pricing-plan__abonement__title">Тренировки<span>для взрослых</span></h4>
+                        <div class="d-flex align-items-center position-relative">
+                            <div class="abonement__time__wrapper mr-5">
+                                <h5 class="abonement__text--title">Когда?</h5>
+                                <div class="d-flex">
+                                    <div class="abonement__time__start">20<span
+                                            class="abonement__time__start--part-too">00</span></div>
+                                    <div class="abonement__time__end">21<span
+                                            class="abonement__time__end--part-too">30</span></div>
+                                </div>
+                                <p class="abonement__description">Вторник, четверг, суббота</p>
+                            </div>
+                            <div class="abonement__price__wrapper">
+                                <h5 class="abonement__text--title text-white">Сколько?</h5>
+                                <div class="abonement__price text-white">600
+                                    <span class="abonement__price--part-too">грн/мес</span>
+                                </div>
+                                <strong class="abonement__traning-quantity text-white">12 занятий</strong>
+                            </div>
+                        </div>
+                        <h5 class="abonement__text--title mt-3">Тренера:</h5>
+                        <div class="d-flex">
+                            <div class="avatar__wrapper text-center">
+                                <img src="dist/image/team/anton-kalina.png"
+                                     class="z-depth-1 avatar__image--mini rounded-circle" alt="Антон Калитвинцев">
+                                <h4 class="coach__name">Антон Калитвинцев</h4>
+                            </div>
+                        </div>
+                        <p class="acceptet__year">от 16 лет без опыта или минимальным в боевых искусствах проходят</p>
+                        <a href="#" class="btn btn-block btn-gold">записаться</a>
+                    </div>
+                    <!-- третья колонка -->
+                    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
+                         aria-labelledby="v-pills-messages-tab">
+                        <h4 class="pricing-plan__abonement__title">Тренировки<span>для взрослых</span></h4>
+                        <div class="d-flex align-items-center position-relative">
+                            <div class="abonement__time__wrapper mr-5">
+                                <h5 class="abonement__text--title">Когда?</h5>
+                                <div class="d-flex">
+                                    <div class="abonement__time__start">20<span
+                                            class="abonement__time__start--part-too">00</span></div>
+                                    <div class="abonement__time__end">22<span
+                                            class="abonement__time__end--part-too">00</span></div>
+                                </div>
+                                <p class="abonement__description">Понедельник, вторник, среда</p>
+                            </div>
+                            <div class="abonement__price__wrapper">
+                                <h5 class="abonement__text--title text-white">Сколько?</h5>
+                                <div class="abonement__price text-white">600
+                                    <span class="abonement__price--part-too">грн/мес</span>
+                                </div>
+                                <strong class="abonement__traning-quantity text-white">12 занятий</strong>
+                            </div>
+                        </div>
+                        <h5 class="abonement__text--title mt-3">Тренера:</h5>
+                        <div class="d-flex">
+                            <div class="avatar__wrapper text-center">
+                                <img src="dist/image/team/anton-kalina.png"
+                                     class="z-depth-1 avatar__image--mini rounded-circle" alt="Вячеслав Лозенко">
+                                <h4 class="coach__name">Вячеслав Лозенко</h4>
+                            </div>
+                        </div>
+                        <p class="acceptet__year">В данной группе вы сможете повысить физическую форму, отточить технику
+                            и приобрести опыт
+                            спаррингов.</p>
+                        <a href="#" class="btn btn-block btn-gold">записаться</a>
+                    </div>
+                    <!-- третья колонка -->
+                    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
+                         aria-labelledby="v-pills-settings-tab">
+                        <h4>Тренировки в спортгруппе</h4>
+                        <p>проходят ежедневно кроме воскресенья. Тренировки проходят пн-пт с 18:00 до 20:00.</p>
+                        <p>В спортгруппу можно попасть исключительно по предварительному отбору.</p>
+                        <h4>Тренер: Вячеслав Лозенко</h4>
+                        <strong>Стоимость: 1200 грн/мес (12 занятий)</strong>
+                        <p>Спортсмены клуба регулярно посещают кемпы в Таиланде, участвуют в профессиональных боях,
+                            посещают
+                            чемпионаты Европы и Мира.</p>
+                        <a href="#" class="btn btn-block btn-gold">записаться</a>
+                    </div>
+                    <div class="tab-pane fade" id="v-pills-settings-2" role="tabpanel"
+                         aria-labelledby="v-pills-settings-tab">
+                        <p>Вы можете посещать индивидуальные тренировки с любым тренером нашего клуба. Совместно с
+                            тренером вы
+                            прорабатываете удобный для вас график и темп занятий, вы сможете быстрее отточить
+                            технику и
+                            приобрести
+                            желаемую физическую форму.</p>
+                        <p>Индивидуальные тренировки проводятся как для взрослых так и для детей.</p>
+                        <p>Записаться на индивидуальные тренировки вы можете заполнив форму или позвонив по
+                            номеру.</p>
+                        <a href="#" class="btn btn-block btn-gold">записаться</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
