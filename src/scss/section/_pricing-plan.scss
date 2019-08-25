@@ -1,6 +1,6 @@
 .pricing-plan {
-  padding: 20px 0;
   position: relative;
+  background: #343434;
 }
 
 .pricing-plan:before {
@@ -28,6 +28,14 @@
   color: #ffffff;
 }
 
+.abonement__wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
 .nav__link__pricing.active {
   padding-left: 10px;
   background: transparent !important;
@@ -35,6 +43,11 @@
   border-radius: 0;
   font-size: 30px;
   font-weight: 500;
+}
+
+.tab-content > .active {
+  padding: 20px;
+  color: #ffffff;
 }
 
 .pricing-plan__abonement__title {
@@ -46,7 +59,7 @@
   font-weight: 700;
   letter-spacing: .3px;
   text-align: left;
-  color: #111111;
+  color: #ffffff;
 }
 
 .abonement__time__start {
@@ -118,4 +131,76 @@
 .acceptet__year {
   font-size: 22px;
   font-weight: 700;
+}
+
+@media only screen and (max-width: 1200px) {
+  .abonement__price__wrapper {
+    left: calc(100% - 60%);
+  }
+  .nav__link__pricing {
+    font-size: 27px;
+  }
+  .nav__link__pricing.active {
+    font-size: 27px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .pricing-plan__abonement__title {
+    font-size: 22px;
+  }
+  .abonement__price__wrapper {
+    left: calc(100% - 48%);
+  }
+  .nav__link__pricing {
+    font-size: 19px;
+  }
+  .nav__link__pricing.active {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .pricing-plan::before {
+    width: calc(100% - 73%);
+  }
+  .abonement__price__wrapper {
+    position: static;
+  }
+  .nav__link__pricing {
+    line-height: 27px;
+  }
+  .tab-content > .active {
+    padding: 30px;
+  }
+  .nav__link__pricing {
+    font-size: 15px;
+  }
+  .nav__link__pricing, .nav__link__pricing.active {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .pricing-plan::before {
+    width: calc(100% - 72.4%);
+  }
+  .abonement__time__end, .abonement__time__start {
+    font-size: 30px;
+  }
+  .abonement__time__end--part-too, .abonement__time__start--part-too {
+    font-size: 15px;
+  }
+  .nav__link__pricing, .nav__link__pricing.active {
+    font-size: 12px;
+  }
+
+  .nav__link__pricing {
+    word-break: break-all;
+    line-height: 18px;
+  }
+
+  .tab-content > .active {
+    padding: 20px;
+  }
 }
