@@ -21,16 +21,24 @@
   font-size: 20px;
 }
 
-.owl-theme .owl-nav {
-  margin-top: 10px;
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
   position: absolute;
-  top: -57px;
-  right: 17px;
+  top: 24%;
+  font-size: 36px;
+  outline: none;
 }
 
-.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
-  width: 20px;
-  background: #ddd;
+.owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-prev:hover {
+  background: transparent;
+  color: rgb(210, 157, 65);
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  left: -16px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  right: -16px;
 }
 
 .owl-theme .owl-dots {
