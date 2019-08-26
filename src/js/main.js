@@ -1,7 +1,7 @@
-$(".navbar a").click(function(){
+$(".navbar a").click(function () {
     $("body,html").animate({
-        scrollTop:$("#" + $(this).data('value')).offset().top
-    },1000)
+        scrollTop: $("#" + $(this).data('value')).offset().top
+    }, 1000)
 
 });
 
@@ -25,6 +25,10 @@ $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
     responsiveClass: true,
+    lazyLoad: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
     responsive: {
         0: {
             items: 1,
@@ -35,7 +39,7 @@ $('.owl-carousel').owlCarousel({
             nav: true
         },
         1000: {
-            items: 4,
+            items: 5,
             nav: true,
             loop: false
         }
