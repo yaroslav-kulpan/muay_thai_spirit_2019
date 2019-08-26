@@ -82,6 +82,15 @@ input[type=checkbox]:checked + label::before {
   color: #d29d41;
 }
 
+.form__control {
+  background: #fdfdfe;
+  border: 1px solid #ddd;
+}
+
+.form__control:focus {
+  border: 1px solid #ddd;
+}
+
 .btn-gold {
   max-width: 220px;
   background-color: #dfa700;

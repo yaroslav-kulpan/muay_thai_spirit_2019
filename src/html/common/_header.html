@@ -1,11 +1,13 @@
 <header class="header">
     <div class="container">
         <div class="header-description mt-3">
-            <a class="navbar-brand mt-3" href="#"><img src="dist/image/logotype-muaythai-spirit.png" class="logotype-img"
+            <a class="navbar-brand mt-3" href="#"><img src="dist/image/logotype-muaythai-spirit.png"
+                                                       class="logotype-img"
                                                        alt="mtsg"></a>
             <p class="header-title mt-3">Муай Тай для всех</p>
             <p class="header-title-h1 mt-3">Зал тайландского бокса</p>
-            <a href="#" class="btn btn-signUp mt-3" data-toggle="modal" data-target="#myModal">Записаться на пробную тренировку</a>
+            <a href="#" class="btn btn-signUp mt-3" data-toggle="modal" data-target="#myModal">Записаться на пробную
+                тренировку</a>
 
             <!-- The Modal -->
             <div class="modal fade" id="myModal">
@@ -13,37 +15,57 @@
                     <div class="modal-content">
 
                         <!-- Modal Header -->
-                        <div class="modal-header">
-                            <h4 class="modal-title">Записаться на тренировку</h4>
+                        <div class="modal-header modal__header">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
                         </div>
                         <!-- Modal body -->
                         <div class="modal-body">
-                            <form method="post">
+                            <form method="get">
                                 <div class="form-group">
                                     <label for="name" class="text-label-form d-none">Имя</label>
-                                    <input name="name" type="text" id="name" class="form-control" placeholder="Введите ваше имя"
+                                    <input name="name" type="text" id="name" class="form-control form__control"
+                                           placeholder="Введите ваше имя"
                                            required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email" class="text-label-form d-none">Email address</label>
-                                    <input type="email" class="form-control" id="email"
+                                    <input type="email" class="form-control form__control" id="email"
                                            placeholder="name@example.com">
                                 </div>
                                 <div class="form-group">
                                     <label for="phone" class="text-label-form d-none">Номер
                                         телефона</label>
-                                    <input type="tel" name="phone" id="phone" class="form-control bfh-phone"
-                                           data-format="+3(ddd)ddd-dddd" value="" pattern="(\+[\d\ \(\)\-]{16})"
+                                    <input type="tel" name="phone" id="phone"
+                                           class="form-control form__control bfh-phone"
+                                           data-format="+7 (ddd) ddd-dddd" value="" pattern="(\+[\d\ \(\)\-]{16})"
                                            placeholder="+38(099)-999-99-99" required>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control form__control" id="сhangeGroup">
+                                        <option>Выбрать группу</option>
+                                        <option>Детская группа</option>
+                                        <option>Взрослая группа (Новички)</option>
+                                        <option>Взрослая группа</option>
+                                        <option>Спортсмены</option>
+                                        <option>Индивидуальная тренировка</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control form__control" id="сhangeCoach">
+                                        <option>Выбрать тренера</option>
+                                        <option value="1">Вечеслав Лозенко</option>
+                                        <option value="2">Антон Калитвинцев</option>
+                                        <option value="3">Андрей Мезенцев</option>
+                                        <option value="4">Евгений Краминский</option>
+                                        <option value="5">Влада Кухаренко</option>
+                                    </select>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <input type="submit" class="btn btn-secondary btn-gold" name="submit_button"
+                                           value="Отправить">
                                 </div>
                             </form>
                         </div>
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">закрыть</button>
-                        </div>
-
                     </div>
                 </div>
             </div>
