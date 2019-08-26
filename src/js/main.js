@@ -17,10 +17,6 @@ $(document).ready(function () {
     })
 });
 
-$('.btn-signUp').on('click', function () {
-    alert('Sorry, is not a modal?')
-});
-
 $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
@@ -45,3 +41,5 @@ $('.owl-carousel').owlCarousel({
         }
     }
 });
+
+//
